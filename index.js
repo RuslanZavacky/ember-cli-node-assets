@@ -1,6 +1,8 @@
 /* eslint-env node */
 'use strict';
 
+const cacheKeyForTree = require('calculate-cache-key-for-tree');
+
 module.exports = {
   name: 'ember-cli-node-assets',
 
@@ -20,6 +22,10 @@ module.exports = {
 
   treeForPublic: function() {
     return require('./lib/tree-for')(this.getOptions(), this.parent, ['public']);
+  },
+
+  cacheKeyForTree(treeType) {
+    return cacheKeyForTree(treeType, this);
   },
 
   getOptions: function() {

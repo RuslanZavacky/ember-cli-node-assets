@@ -19,6 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-fixture": "^0.1.0",
+    "calculate-cache-key-for-tree": "^2.0.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "ember-ajax": "^2.5.2",
