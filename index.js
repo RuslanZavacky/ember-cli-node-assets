@@ -25,7 +25,7 @@ module.exports = {
   },
 
   cacheKeyForTree(treeType) {
-    return cacheKeyForTree(treeType, this);
+    return cacheKeyForTree(treeType, this, [JSON.stringify(this.getOptions())]);
   },
 
   getOptions: function() {
